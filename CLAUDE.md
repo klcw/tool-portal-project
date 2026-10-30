@@ -21,6 +21,10 @@
 2. Users can toggle between a light and a dark theme. The default is the light theme.
 3. Text must stay easy to read, with good contrast, in both the light and the dark theme.
 
+## Visual Design
+
+Design C, "Friendly Teal": Lexend for headings and Nunito Sans for body text (loaded from Google Fonts), a teal accent, pill-shaped buttons, and rounded cards. All colours are variables at the top of `css/style.css`, one set per theme.
+
 ## Rules for Claude
 
 - Explain technical terms in plain language.
