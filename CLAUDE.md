@@ -39,8 +39,8 @@ The portal is for GCE A Level General Paper, Paper 1 students. Visitors try smal
 
 ### Phases
 
-1. **Phase 1: the portal plus its first tool.** The homepage, the shared header and theme toggle, and exactly one tool: the Essay Marker. In: an essay question and the essay. Out: a score breakdown with reasoning. A small server function keeps the AI key private.
+1. **Phase 1: the portal plus its first tool.** The homepage, the shared header and theme toggle, and exactly one tool. No AI in this phase.
    - [x] Portal homepage with a placeholder "Tool 1 — coming soon" card that opens and closes (`index.html`, `tools/tool-1.html`).
-   - [ ] Essay Marker tool, replacing the placeholder.
-   - [ ] Server function that keeps the AI key private.
+   - [ ] First tool, replacing the placeholder (what it does is still to be decided).
 2. **Phase 2: more tools.** Add further tools one at a time, chosen after seeing how students use the first.
+3. **Phase 3 (later): AI marking.** The Essay Marker. In: an essay question and the essay. Out: a score out of 50 (Content 30, Language 20) with reasoning. A small server function keeps the AI key private. Needs an Anthropic API key, which is billed separately from a Claude plan.
