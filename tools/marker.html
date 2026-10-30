@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Essay Question Analyser — Tool Portal</title>
+  <title>Essay Marker — Tool Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600&family=Nunito+Sans:wght@400;700&display=swap">
@@ -17,14 +17,21 @@
   </header>
 
   <main>
-    <h1>Essay Question Analyser</h1>
-    <p class="intro">Paste a General Paper essay question. You get what it asks you to do, the limits to stay within, and the words to define before you plan.</p>
+    <h1>Essay Marker</h1>
+    <p class="intro">Paste the essay question and your essay. You get a score out of 50 (Content out of 30, Language out of 20), with a reason for each part.</p>
 
-    <form id="analyser-form">
-      <label for="question">Essay question</label>
-      <textarea id="question" rows="4" placeholder="Example: To what extent is technology making young people in Singapore less able to think for themselves?"></textarea>
+    <form id="marker-form">
+      <div class="field">
+        <label for="question">Essay question</label>
+        <textarea id="question" rows="3" placeholder="Paste the essay question here"></textarea>
+      </div>
+      <div class="field">
+        <label for="essay">Your essay</label>
+        <textarea id="essay" rows="16" placeholder="Paste your essay here"></textarea>
+        <p id="word-count" class="note">0 words</p>
+      </div>
       <div class="form-actions">
-        <button type="submit">Analyse</button>
+        <button type="submit" id="mark">Mark my essay</button>
         <button type="button" id="clear">Clear</button>
       </div>
     </form>
@@ -32,6 +39,6 @@
     <div id="results" aria-live="polite"></div>
   </main>
 
-  <script src="../js/analyser.js"></script>
+  <script src="../js/marker.js"></script>
 </body>
 </html>

@@ -227,3 +227,23 @@ textarea {
 .note {
   color: var(--muted);
 }
+
+/* Marker page */
+.field {
+  margin-bottom: 1rem;
+}
+
+.field .note {
+  margin: 0.25rem 0 0;
+}
+
+.score-total {
+  margin: 0 0 1.5rem;
+  font-family: Lexend, system-ui, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.result-section p {
+  margin: 0 0 0.75rem;
+}
