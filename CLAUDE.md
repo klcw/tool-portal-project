@@ -7,10 +7,11 @@
 
 ## Project Structure
 
-The project is nearly empty for now.
-
 - `CLAUDE.md` — this file.
-- Pages, styles, and scripts will live at the top level until a folder structure is agreed on.
+- `index.html` — the portal homepage.
+- `tools/` — one page per tool (currently only the placeholder `tool-1.html`).
+- `css/style.css` — shared styles, including the light and dark theme colours.
+- `js/theme.js` — shared light/dark theme toggle.
 
 ## Key Requirements
 
@@ -38,4 +39,7 @@ The portal is for GCE A Level General Paper, Paper 1 students. Visitors try smal
 ### Phases
 
 1. **Phase 1: the portal plus its first tool.** The homepage, the shared header and theme toggle, and exactly one tool: the Essay Marker. In: an essay question and the essay. Out: a score breakdown with reasoning. A small server function keeps the AI key private.
+   - [x] Portal homepage with a placeholder "Tool 1 — coming soon" card that opens and closes (`index.html`, `tools/tool-1.html`).
+   - [ ] Essay Marker tool, replacing the placeholder.
+   - [ ] Server function that keeps the AI key private.
 2. **Phase 2: more tools.** Add further tools one at a time, chosen after seeing how students use the first.
