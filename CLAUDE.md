@@ -9,6 +9,7 @@
 ## Project Structure
 
 - `CLAUDE.md` — this file.
+- `marking-scheme.md` — the official Paper 1 band descriptors, condensed. The AI marker must follow it.
 - `index.html` — the portal homepage.
 - `tools/` — one page per tool (currently `marker.html`).
 - `css/style.css` — shared styles, including the light and dark theme colours.
@@ -30,6 +31,7 @@ Design C, "Friendly Teal": Lexend for headings and Nunito Sans for body text (lo
 - Explain technical terms in plain language.
 - Ask before making big changes.
 - Ask rather than guess when something is unclear.
+- Marking must follow `marking-scheme.md`. Never invent marking criteria, bands, or penalties.
 
 ## Feature Plan
 
@@ -47,5 +49,6 @@ The portal is for GCE A Level General Paper, Paper 1 students. Visitors try smal
 1. **Phase 1: the portal plus its first tool.** The homepage, the shared header and theme toggle, and exactly one tool: the Essay Marker. In: an essay question and the essay, in two paste-in fields. Out: a score out of 50 (Content 30, Language 20) with a written reason for each part.
    - [x] Portal homepage with a card that opens and closes (`index.html`).
    - [x] Marker page: two fields, word count, and a results view for the two scores, the total and the reasons (`tools/marker.html`, `js/marker.js`). Marking is not connected yet, so it says so and shows no scores.
-   - [ ] Connect AI marking: a small server function keeps the AI key private, and its address goes in `MARKING_URL` in `js/marker.js`. Needs an Anthropic API key, which is billed separately from a Claude plan. Expected answer: `{"content": {"score", "reason"}, "language": {"score", "reason"}}`.
+   - [x] Marking scheme recorded from the 8881 syllabus (`marking-scheme.md`).
+   - [ ] Connect AI marking, following `marking-scheme.md`: a small server function keeps the AI key private, and its address goes in `MARKING_URL` in `js/marker.js`. Needs an Anthropic API key, which is billed separately from a Claude plan. Expected answer: `{"content": {"score", "reason"}, "language": {"score", "reason"}}`.
 2. **Phase 2: more tools.** Add further tools one at a time, chosen after seeing how students use the first.
