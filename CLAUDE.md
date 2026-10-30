@@ -10,9 +10,10 @@
 
 - `CLAUDE.md` — this file.
 - `index.html` — the portal homepage.
-- `tools/` — one page per tool (currently only the placeholder `tool-1.html`).
+- `tools/` — one page per tool (currently `question-analyser.html`).
 - `css/style.css` — shared styles, including the light and dark theme colours.
 - `js/theme.js` — shared light/dark theme toggle.
+- `js/analyser.js` — the Essay Question Analyser's logic.
 
 ## Key Requirements
 
@@ -33,7 +34,7 @@ The portal is for GCE A Level General Paper, Paper 1 students. Visitors try smal
 ### Portal structure
 
 - **Homepage** (`index.html`): the portal title, a short intro, and one card per tool. Each card has the tool's name, one line on what it does, and an Open button.
-- **Opening a tool**: clicking a card goes to that tool's own page in `tools/`, for example `tools/marker.html`.
+- **Opening a tool**: clicking a card goes to that tool's own page in `tools/`, for example `tools/question-analyser.html`.
 - **Getting back**: every tool page has the same header with a "Back to all tools" link to the homepage, plus the theme toggle.
 - **Adding a tool later**: add one page in `tools/` and one card on the homepage. Nothing else changes.
 
@@ -41,6 +42,6 @@ The portal is for GCE A Level General Paper, Paper 1 students. Visitors try smal
 
 1. **Phase 1: the portal plus its first tool.** The homepage, the shared header and theme toggle, and exactly one tool. No AI in this phase.
    - [x] Portal homepage with a placeholder "Tool 1 — coming soon" card that opens and closes (`index.html`, `tools/tool-1.html`).
-   - [ ] First tool, replacing the placeholder (what it does is still to be decided).
+   - [x] First tool, replacing the placeholder: the Essay Question Analyser (`tools/question-analyser.html`, `js/analyser.js`). It matches words in a question; it does not use AI.
 2. **Phase 2: more tools.** Add further tools one at a time, chosen after seeing how students use the first.
 3. **Phase 3 (later): AI marking.** The Essay Marker. In: an essay question and the essay. Out: a score out of 50 (Content 30, Language 20) with reasoning. A small server function keeps the AI key private. Needs an Anthropic API key, which is billed separately from a Claude plan.

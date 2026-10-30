@@ -117,3 +117,55 @@ main {
 .card .button {
   align-self: flex-start;
 }
+
+/* Tool pages */
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  resize: vertical;
+}
+
+textarea:focus-visible {
+  outline: 3px solid var(--link);
+  outline-offset: 2px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+#results {
+  margin-top: 1.5rem;
+}
+
+.result-section {
+  margin-bottom: 1.5rem;
+}
+
+.result-section h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+}
+
+.result-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.note {
+  color: var(--muted);
+}

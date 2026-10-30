@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Essay Question Analyser — Tool Portal</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html">&larr; Back to all tools</a>
+    <button type="button" id="theme-toggle">Switch to dark theme</button>
+  </header>
+
+  <main>
+    <h1>Essay Question Analyser</h1>
+    <p class="intro">Paste a General Paper essay question. You get what it asks you to do, the limits to stay within, and the words to define before you plan.</p>
+
+    <form id="analyser-form">
+      <label for="question">Essay question</label>
+      <textarea id="question" rows="4" placeholder="Example: To what extent is technology making young people in Singapore less able to think for themselves?"></textarea>
+      <div class="form-actions">
+        <button type="submit">Analyse</button>
+        <button type="button" id="clear">Clear</button>
+      </div>
+    </form>
+
+    <div id="results" aria-live="polite"></div>
+  </main>
+
+  <script src="../js/analyser.js"></script>
+</body>
+</html>
