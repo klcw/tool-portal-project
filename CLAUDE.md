@@ -4,6 +4,7 @@
 
 - Plain HTML, CSS, and JavaScript only.
 - No frameworks, no libraries, no build step. Files are opened or served exactly as written.
+- One exception: a single small server function, written in plain JavaScript, may hold the AI key so it never reaches the browser. No other server code.
 
 ## Project Structure
 
